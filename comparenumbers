@@ -1,0 +1,10 @@
+import random
+random_integer = random.randint(1,100)
+number = int(input("Please enter number between 1 and 100"))
+print(random_integer)
+if number == random_integer:
+    print("Congrats. That is the correct number")
+elif number < random_integer:
+    print("that number is lower than the guess. Random Integer is {}".format(random_integer))
+else:
+    print("that number is higher than the guess. Random Integer is {}".format(random_integer))
